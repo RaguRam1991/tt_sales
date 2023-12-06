@@ -22,7 +22,8 @@ const Logout = (props) => {
     return <Redirect to="/login" />;
   }
 
-  return <></>;
+  return <Redirect to="/login" />;
+  // return <></>;
 };
 
 Logout.propTypes = {
