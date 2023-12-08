@@ -12,15 +12,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={configureStore({})}>
     <React.Fragment>
-      {process.env.NODE_ENV === "production" ? (
-        <HashRouter basename={process.env.PUBLIC_URL}>
-          <App />
-        </HashRouter>
-      ) : (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
-          <App />
-        </BrowserRouter>
-      )}
+      <HashRouter basename={process.env.PUBLIC_URL}>
+        <App />
+      </HashRouter>
     </React.Fragment>
   </Provider>
 );
